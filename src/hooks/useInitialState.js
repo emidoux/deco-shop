@@ -9,7 +9,6 @@ const useInitialState = () =>{
 
     const addToCart = (payload,newId) =>{
         const newProduct = {...payload, id: newId};
-        console.log(newProduct);
         setState({
             ...state,
             cart: [...state.cart, newProduct]
