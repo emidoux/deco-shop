@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "/src/styles/Menu.css";
 
 const Menu = () => {
@@ -29,7 +30,26 @@ const Menu = () => {
               className="Menu-listElement-icon"
             />
           </figure>
-          <p className="Menu-listElement-title">Inicio</p>
+          <Link to="/"><p className="Menu-listElement-title">Inicio</p></Link>
+        </div>
+        <figure className="Menu-listElement-arrow-container">
+          <img
+            src="/img/arrowIcon.svg"
+            alt="Arrow icon"
+            className="Menu-listElement-arrow"
+          />
+        </figure>
+      </div>
+      <div className="Menu-listElement-container">
+        <div className="Menu-listElement-subContainer">
+          <figure className="Menu-listElement-icon-container">
+            <img
+              src="/img/orderIcon.svg"
+              alt="Order icon"
+              className="Menu-listElement-icon"
+            />
+          </figure>
+          <Link to="categories"><p className="Menu-listElement-title">Categorias</p></Link>
         </div>
         <figure className="Menu-listElement-arrow-container">
           <img
@@ -49,25 +69,6 @@ const Menu = () => {
             />
           </figure>
           <p className="Menu-listElement-title">Categorias</p>
-        </div>
-        <figure className="Menu-listElement-arrow-container">
-          <img
-            src="/img/arrowIcon.svg"
-            alt="Arrow icon"
-            className="Menu-listElement-arrow"
-          />
-        </figure>
-      </div>
-      <div className="Menu-listElement-container">
-        <div className="Menu-listElement-subContainer">
-          <figure className="Menu-listElement-icon-container">
-            <img
-              src="/img/orderIcon.svg"
-              alt="Order icon"
-              className="Menu-listElement-icon"
-            />
-          </figure>
-          <p className="Menu-listElement-title">Productos</p>
         </div>
         <figure className="Menu-listElement-arrow-container">
           <img

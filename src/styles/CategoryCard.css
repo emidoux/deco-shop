@@ -1,0 +1,69 @@
+.CategoryCard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E2E2E2;
+    border-radius: 18px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.CategoryCard-image-container{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.CategoryCard-image{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.CategoryCard-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color:black;
+    margin: 20px 0px 5px 0px;
+}
+
+/* ------------ MEDIA QUERIES ----------- */
+
+@media (min-width: 320px) {
+    .CategoryCard-image-container{
+        height: 122px;
+    }
+}
+
+@media (min-width: 340px) {
+    .CategoryCard-image-container{
+        height: 138px;
+    }
+}
+
+@media (min-width: 360px) {
+    .CategoryCard-image-container{
+        height: 148px;
+    }
+}
+
+@media (min-width: 375px) {
+    .CategoryCard-image-container{
+        height: 150px;
+    }
+}
+
+@media (min-width: 400px) {
+    .CategoryCard-image-container{
+        height: 164px;
+    }
+}
+
+@media (min-width: 425px) {
+    .CategoryCard-image-container{
+        height: 184px;
+    }
+}
