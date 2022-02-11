@@ -1,0 +1,83 @@
+.Menu-container{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    --animate-duration: 0.5s;
+}
+
+.Menu-userInfo-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 116px;
+    padding: 30px 25px;
+}
+
+.Menu-userInfo-image-container{
+    display: flex;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+}
+
+.Menu-userInfo-image{
+    width: 100%;
+    border-radius: 27px;
+}
+
+.Menu-userInfo-data-container{
+    margin-left: 20px;
+}
+
+.Menu-userInfo-name{
+    font-size: 2rem;
+    color:black;
+    font-weight: bold;
+}
+
+.Menu-userInfo-email{
+    font-size: 1.6rem;
+    color: #7C7C7C;
+}
+
+.Menu-listElement-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    padding: 20px 26px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+#Menu-listElement-container-first{
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2 ;
+}
+
+.Menu-listElement-subContainer{
+    display: flex;
+    align-items: center;
+}
+
+.Menu-listElement-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.Menu-listElement-icon{
+    margin-right: 20px;
+}
+
+.Menu-listElement-title{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.Menu-listElement-arrow-container{
+    display: flex;
+    align-content: center;
+}
