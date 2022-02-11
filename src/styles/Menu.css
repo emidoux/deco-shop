@@ -73,6 +73,7 @@
 }
 
 .Menu-listElement-title{
+    text-decoration: none;
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -80,4 +81,24 @@
 .Menu-listElement-arrow-container{
     display: flex;
     align-content: center;
+}
+
+.Menu-wrapperLink{
+    color:black;
+    text-decoration: none;
+}
+
+.Menu-wrapperLink:active{
+    color:black;
+    text-decoration: none;
+}
+
+.Menu-wrapperLink:visited{
+    color:black;
+    text-decoration: none;
+}
+
+.Menu-wrapperLink:link{
+    color:black;
+    text-decoration: none;
 }

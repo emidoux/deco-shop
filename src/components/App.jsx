@@ -19,9 +19,9 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<ProductsListPage />} />
+          <Route path="/index.html" element={<ProductsListPage />} />
           <Route path="categories" element={ <CategoriesListPage /> }/>
-          <Route path="*" element={ <NotFound /> } />
+          <Route path="productsListPage" element={<ProductsListPage />} />
         </Routes>
       </BrowserRouter>
     </AppContext.Provider>

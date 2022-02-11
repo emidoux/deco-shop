@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "/src/styles/Menu.css";
 
-const Menu = () => {
+const Menu = ( {stateChanger, stateMenu}) => {
   return (
     <div className="Menu-container animate__animated animate__fadeInLeft">
       <div className="Menu-userInfo-container">
@@ -30,7 +30,7 @@ const Menu = () => {
               className="Menu-listElement-icon"
             />
           </figure>
-          <Link to="/"><p className="Menu-listElement-title">Inicio</p></Link>
+          <Link className="Menu-wrapperLink" to="productsListPage" onClick={() => stateChanger(!stateMenu)}><p className="Menu-listElement-title">Inicio</p></Link>
         </div>
         <figure className="Menu-listElement-arrow-container">
           <img
@@ -49,26 +49,7 @@ const Menu = () => {
               className="Menu-listElement-icon"
             />
           </figure>
-          <Link to="categories"><p className="Menu-listElement-title">Categorias</p></Link>
-        </div>
-        <figure className="Menu-listElement-arrow-container">
-          <img
-            src="/img/arrowIcon.svg"
-            alt="Arrow icon"
-            className="Menu-listElement-arrow"
-          />
-        </figure>
-      </div>
-      <div className="Menu-listElement-container">
-        <div className="Menu-listElement-subContainer">
-          <figure className="Menu-listElement-icon-container">
-            <img
-              src="/img/orderIcon.svg"
-              alt="Order icon"
-              className="Menu-listElement-icon"
-            />
-          </figure>
-          <p className="Menu-listElement-title">Categorias</p>
+          <Link className="Menu-wrapperLink" to="categories" onClick={() => stateChanger(!stateMenu)}><p className="Menu-listElement-title">Categorias</p></Link>
         </div>
         <figure className="Menu-listElement-arrow-container">
           <img

@@ -22,7 +22,7 @@ const NavBar = () =>{
 
     return (
         <nav className="NavBar-container">
-        {toggleMenu && <Menu />}
+        {toggleMenu && <Menu stateChanger={ setToggleMenu } stateMenu= {toggleMenu} />}
         <figure className="NavBar-menu-container">
             <img className="NavBar-menu-image" src="/img/menuIcon.svg" alt="Menu image" onClick={ handleToggleMenu } />
         </figure>
