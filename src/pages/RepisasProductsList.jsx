@@ -14,7 +14,6 @@ const RepisasProductsList = () =>{
         const getData = await fetch(API);
         const data = await getData.json();
         const filtered = data.data.filter(item => item.attributes.category === "Repisas")
-        console.log(filtered);
         setProduct(filtered);
         
     }, [])

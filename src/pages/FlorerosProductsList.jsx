@@ -14,7 +14,6 @@ const FlorerosProductsList = () =>{
         const getData = await fetch(API);
         const data = await getData.json();
         const filtered = data.data.filter(item => item.attributes.category === "Floreros")
-        console.log(filtered);
         setProduct(filtered);
         
     }, [])
