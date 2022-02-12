@@ -18,6 +18,7 @@ const Menu = ( {stateChanger, stateMenu}) => {
           <p className="Menu-userInfo-email">agustin.ramirez@gmail.com</p>
         </div>
       </div>
+      <Link className="Menu-wrapperLink" to="productsListPage" onClick={() => stateChanger(!stateMenu)}>
       <div
         className="Menu-listElement-container"
         id="Menu-listElement-container-first"
@@ -30,7 +31,7 @@ const Menu = ( {stateChanger, stateMenu}) => {
               className="Menu-listElement-icon"
             />
           </figure>
-          <Link className="Menu-wrapperLink" to="productsListPage" onClick={() => stateChanger(!stateMenu)}><p className="Menu-listElement-title">Inicio</p></Link>
+          <p className="Menu-listElement-title">Inicio</p>
         </div>
         <figure className="Menu-listElement-arrow-container">
           <img
@@ -40,6 +41,8 @@ const Menu = ( {stateChanger, stateMenu}) => {
           />
         </figure>
       </div>
+      </Link>
+      <Link className="Menu-wrapperLink" to="categories" onClick={() => stateChanger(!stateMenu)}>
       <div className="Menu-listElement-container">
         <div className="Menu-listElement-subContainer">
           <figure className="Menu-listElement-icon-container">
@@ -48,8 +51,8 @@ const Menu = ( {stateChanger, stateMenu}) => {
               alt="Order icon"
               className="Menu-listElement-icon"
             />
+          <p className="Menu-listElement-title">Categorias</p>
           </figure>
-          <Link className="Menu-wrapperLink" to="categories" onClick={() => stateChanger(!stateMenu)}><p className="Menu-listElement-title">Categorias</p></Link>
         </div>
         <figure className="Menu-listElement-arrow-container">
           <img
@@ -59,6 +62,7 @@ const Menu = ( {stateChanger, stateMenu}) => {
           />
         </figure>
       </div>
+      </Link>
     </div>
   );
 };

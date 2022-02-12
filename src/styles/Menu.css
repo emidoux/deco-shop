@@ -51,6 +51,7 @@
     height: 64px;
     padding: 20px 26px;
     border-bottom: 1px solid #E2E2E2;
+    cursor:pointer;
 }
 
 #Menu-listElement-container-first{

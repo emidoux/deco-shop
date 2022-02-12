@@ -31,6 +31,26 @@
     margin: 20px 0px 5px 0px;
 }
 
+.CategoryCard-title-wrappper{
+    color:black;
+    text-decoration: none;
+}
+
+.CategoryCard-title:active{
+    color:black;
+    text-decoration: none;
+}
+
+.CategoryCard-title:visited{
+    color:black;
+    text-decoration: none;
+}
+
+.CategoryCard-title:link{
+    color:black;
+    text-decoration: none;
+}
+
 /* ------------ MEDIA QUERIES ----------- */
 
 @media (min-width: 320px) {
