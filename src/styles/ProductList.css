@@ -8,3 +8,31 @@
     align-items: center;
     padding: 10px;
 }
+
+@media (min-width: 768px){
+    .ProductList-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:40px;
+    }
+}
+
+@media (min-width: 850px){
+    .ProductList-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:40px;
+    }
+}
+
+@media (min-width: 1024px){
+    .ProductList-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap:40px;
+    }
+}
+
+@media (min-width: 1440px){
+    .ProductList-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap:40px;
+    }
+}

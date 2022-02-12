@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 190px;
     padding: 15px;
     border: 1px solid #E2E2E2;
     border-radius: 18px;

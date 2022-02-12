@@ -1,9 +1,18 @@
 .CategoryList-container{
     display: grid;
+    margin: 0 auto;
     width: 100%;
+    max-width: 768px;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     justify-items: center;
     align-items: center;
     padding: 10px;
+}
+
+@media (min-width: 768px){
+    .CategoryList-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:40px;
+    }
 }

@@ -6,7 +6,6 @@ import AppContext from "../context/AppContext";
 import useInitialState from "../hooks/useInitialState";
 import ProductsListPage from "../pages/ProductsListPage";
 import CategoriesListPage from "../pages/CategoriesListPage";
-import NotFound from "../pages/NotFound";
 
 function App() {
   const initialState = useInitialState();
