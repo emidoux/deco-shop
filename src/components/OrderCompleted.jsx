@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import AppContext from "../context/AppContext";
 import "../styles/OrderCompleted.css";
 
 const OrderCompleted = ( { cartState }) =>{
-
 
     return(
         <div className="OrderCompleted-container animate__animated animate__fadeIn">

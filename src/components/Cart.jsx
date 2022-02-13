@@ -20,6 +20,15 @@ const Cart = ( { stateCart }) => {
     return sum;
   };
 
+  const handdleTotal = () =>{
+    if(state.cart.length === 0){
+      console.log(state.length);
+      return null;
+    } else {
+      return(toggleOrderState(), clearCart());
+    }
+  }
+
 
   return (
     <div className="Cart-container animate__animated animate__fadeInRight">
@@ -30,7 +39,7 @@ const Cart = ( { stateCart }) => {
       {state.cart.map((item) => (
         <ProductCartItem product={item} key={item.id} />
       ))}
-      <div className="Cart-total-container" onClick={ () =>{ toggleOrderState(); clearCart()} }>
+      <div className="Cart-total-container" onClick={() => handdleTotal() }>
         <p className="Cart-total-checkoutText">Checkout</p>
         <span className="Cart-total-count">Total ${sumTotal()}</span>
       </div>
