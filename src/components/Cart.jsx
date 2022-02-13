@@ -41,7 +41,7 @@ const Cart = ( { stateCart }) => {
       ))}
       <div className="Cart-total-container" onClick={() => handdleTotal() }>
         <p className="Cart-total-checkoutText">Checkout</p>
-        <span className="Cart-total-count">Total ${sumTotal()}</span>
+        <span className="Cart-total-count">Total $ {sumTotal()}</span>
       </div>
     </div>
   );

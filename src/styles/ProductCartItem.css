@@ -62,6 +62,10 @@
     align-items: flex-end;
 }
 
+.Cart-product-options-delete-container{
+    cursor:pointer;
+}
+
 .Cart-product-options-price{
     font-size: 1.8rem;
     color:black;

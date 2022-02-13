@@ -5,6 +5,9 @@
     width: 100%;
     background-color: white;
     --animate-duration: 0.5s;
+    border-right: 1px solid #00000014;
+    box-shadow: 0 4px 20px #00000014;
+    border-bottom: 1px solid #00000014;
 }
 
 .Menu-userInfo-container{
@@ -13,6 +16,7 @@
     width: 100%;
     height: 116px;
     padding: 30px 25px;
+    background-color: whitesmoke;
 }
 
 .Menu-userInfo-image-container{
@@ -20,7 +24,7 @@
     align-items: center;
     width: 64px;
     height: 64px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .Menu-userInfo-image{
