@@ -39,7 +39,7 @@ const NavBar = () =>{
             <img className="NavBar-cart-image" src="/img/cart.svg" alt="Cart image" />
             {state.cart.length > 0 ? <span className="NavBar-cart-counter">{state.cart.length}</span> : null}
         </figure>
-        {toggleCart && <Cart />}
+        {toggleCart && <Cart stateCart={ handleToggleCart }/>}
     </nav>
     );
 }

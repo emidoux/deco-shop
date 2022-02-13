@@ -21,7 +21,7 @@ const SillasProductsList = () =>{
 
     return(
         <div className="SillasProductsList-container">
-            {product.map(item => (<ProductCard product={ item } key={product.id} />) )}
+            {product.map(item => (<ProductCard product={ item } key={item.id} />) )}
         </div>
     );
 }

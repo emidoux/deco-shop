@@ -22,11 +22,19 @@ const useInitialState = () =>{
         });
     }
 
+    const clearCart = () =>{
+        setState({
+            ...state,
+            cart: []
+        });
+    }
+
 
     return {
         state,
         addToCart,
         removeFromCart,
+        clearCart
     }
 };
 

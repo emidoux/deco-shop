@@ -1,10 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ProductCartItem from "./ProductCartItem";
 import "../styles/Cart.css";
 import AppContext from "../context/AppContext";
+import OrderCompleted from "./OrderCompleted";
 
-const Cart = () => {
-  const { state } = useContext(AppContext);
+const Cart = ( { stateCart }) => {
+  const { state, clearCart } = useContext(AppContext);
+
+  const [orderCompleted, setOrderCompleted] = useState(false);
+
+  const toggleOrderState = () =>{
+    setOrderCompleted(!orderCompleted);
+  }
 
   const sumTotal = () => {
     const reducer = (accumulator, currentValue) =>
@@ -16,13 +23,14 @@ const Cart = () => {
 
   return (
     <div className="Cart-container animate__animated animate__fadeInRight">
+      {orderCompleted && <OrderCompleted cartState={ stateCart } />}
       <div className="Cart-title-container">
         <p className="Cart-title-text">Mi Carrito</p>
       </div>
       {state.cart.map((item) => (
         <ProductCartItem product={item} key={item.id} />
       ))}
-      <div className="Cart-total-container">
+      <div className="Cart-total-container" onClick={ () =>{ toggleOrderState(); clearCart()} }>
         <p className="Cart-total-checkoutText">Checkout</p>
         <span className="Cart-total-count">Total ${sumTotal()}</span>
       </div>

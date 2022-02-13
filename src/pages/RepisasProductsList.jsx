@@ -21,7 +21,7 @@ const RepisasProductsList = () =>{
 
     return(
         <div className="RepisasProductsList-container">
-            {product.map(item => (<ProductCard product={ item } key={product.id} />) )}
+            {product.map(item => (<ProductCard product={ item } key={item.id} />) )}
         </div>
     );
 }
