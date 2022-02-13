@@ -6,7 +6,7 @@ const OrderCompleted = ( { cartState }) =>{
 
     return(
         <div className="OrderCompleted-container animate__animated animate__fadeIn">
-        <figure className="OrderCompleted-image-container">
+        <figure className="OrderCompleted-image-container animate__animated animate__pulse">
             <img src="/img/orderCompleted.svg" alt="Order Completed" className="OrderCompleted-image" />
         </figure>
         <p className="OrderCompleted-text">Tu orden ha sido confirmada!</p>
