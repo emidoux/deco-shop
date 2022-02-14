@@ -24,8 +24,5 @@
 ## Contacto de autor:
 - Nombre: Emiliano Agustin Doux
 - E-mail: emidoux@gmail.com
-<<<<<<< HEAD
 - Teléfono: +54 342 5784562
-=======
-- Teléfono: +54 342 5784562
->>>>>>> 01a6e68a4aa11f7d218fb4bfcffd6ed0ae51e7bd
+
