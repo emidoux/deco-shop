@@ -1,8 +1,13 @@
-import React, { useContext } from "react";
-import AppContext from "../context/AppContext";
+/**
+ * <OrderCompleted> estructura la vista de "orden completada", que se renderiza
+ *  luego de presionar el botón "checkout" en <Cart>.
+ */
+
+import React from "react";
 import "../styles/OrderCompleted.css";
 
-const OrderCompleted = ( { cartState }) =>{
+const OrderCompleted = ( { cartState }) =>{ //{cartState} importa como Prop la función para
+    //cerrar <Cart> y establecer el carro de compras como un array vacío nuevamente.
 
     return(
         <div className="OrderCompleted-container animate__animated animate__fadeIn">

@@ -1,10 +1,21 @@
+/**
+ * <ProductCartItem> es un componente que recrea la vista individual de cada tarjeta
+ * de productos listadas en el carro de compras (<Cart>). Recive {product} como prop para mostrar los datos individuales
+ * del producto obtenidos por Fetch a la API.
+ */
+
 import React, { useContext } from "react";
 import AppContext from "../context/AppContext";
 import "../styles/ProductCartItem.css";
 
 const ProductCartItem = ({ product }) => {
-  const { removeFromCart } = useContext(AppContext);
+  const { removeFromCart } = useContext(AppContext); //Importa función para remover elemento del carrito.
 
+  /**
+   * Función que se ejecuta por el evento de click al eliminar producto de <Cart>.
+   * Invoca a la función removeFromCart().
+   * 
+   */
   const handdleRemove = (productToDelete) => {
     removeFromCart(productToDelete);
   };

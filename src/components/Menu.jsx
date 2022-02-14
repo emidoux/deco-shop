@@ -1,8 +1,14 @@
+/**
+ * <Menu> Es un componente que renderiza la vista del menú de la aplicación.
+ * Contiene los enlaces para las rutas de vistas de productos y categorias.
+ */
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "/src/styles/Menu.css";
 
-const Menu = ( {stateChanger, stateMenu}) => {
+const Menu = ( {stateChanger, stateMenu}) => { // {stateChanger} alterna la vista del menú 
+  //y {stateMenu} informa sobre el estado de la vista.
   return (
     <div className="Menu-container animate__animated animate__fadeInLeft">
       <div className="Menu-userInfo-container">

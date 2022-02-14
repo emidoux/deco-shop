@@ -1,3 +1,6 @@
+/**
+ * Layout que renderiza una lista de categorias con <CategoryList>
+ */
 import React from "react";
 import "../styles/CategoriesListPage.css";
 import CategoryList from "../components/CategoryList";
