@@ -1,3 +1,9 @@
+/**
+ * <CategoryCard> es un componente que recrea la vista individual de cada tarjeta
+ * de categorias listadas. Recive {category} como prop para mostrar los datos individuales
+ * de las categorias obtenidas por Fetch a la API.
+ */
+
 import React from "react";
 import "../styles/CategoryCard.css";
 import { Link } from "react-router-dom";

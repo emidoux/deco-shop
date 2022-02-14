@@ -1,3 +1,10 @@
+/**
+ * Componente <App>. Contiene {initialState} como Context.
+ * Utiliza React Router DOM para sistema de rutas.
+ * Importa {animate.css}, una libreria de animaciones en JavaScript.
+ */
+
+
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "animate.css";
@@ -11,7 +18,8 @@ import FlorerosProductsList from "../pages/FlorerosProductsList";
 import RepisasProductsList from "../pages/RepisasProductsList";
 
 function App() {
-  const initialState = useInitialState();
+
+  const initialState = useInitialState(); // Instancia del Context
 
   return (
     <AppContext.Provider value={initialState}>
