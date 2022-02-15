@@ -12,8 +12,8 @@
 - Strappi
 - Librería "Animate.css" para incorporar animaciones.
 
-#### Para visualizar el proyecto en modo desarrollo se deben ejecutar el siguiente comando:
-
+#### Para visualizar el proyecto en modo desarrollo se deben ejecutar los siguientes comandos:
+<code>npm install</code>
 <code>npm run dev</code>
 
 #### Para compilar el proyecto en modo producción se deben ejecutar el siguiente comando:
