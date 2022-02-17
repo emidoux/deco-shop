@@ -2,7 +2,7 @@
 
 <a href="https://decoshop.site/"> ENLACE PARA VISUALIZAR</a>  --------> ***IMPORTANTE: La primer carga de la aplicación puede demorar unos segundos ya que la API se encuentra alojada en Heroku de modo gratuito y puede encontrarse en estado de "reposo" hasta que recibe una consulta.***
 
-## Deco Shop es un proyecto de vistas de usuario creado con React Js y Strapi como backend. Permite la creación de un carro de compras, consumir datos de una API personalizada y el flujo de trabajo como Single Page Aplication (SPA).
+## Deco Shop es un proyecto de vistas de usuario, diseñado "mobile first" y es totalmente responsive. Creado con React Js y Strapi como backend. Permite la creación de un carro de compras, consumir datos de una API personalizada y el flujo de trabajo como Single Page Aplication (SPA).
 
 #### La creación del proyecto se realizó con las siguiente tecnologías: 
 
